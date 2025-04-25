@@ -1,14 +1,5 @@
 """
 📄 Bestand: web_entry.py
-🔍 Doel: [AUTO-GEGENEREERD: controleer doel handmatig]
-🧩 Gebruikt door: onbekend
-📦 Behoort tot: web_entry.py
-🧠 Laatst geüpdatet: 2025-04-25
-"""
-
-
-"""
-📄 Bestand: web_entry.py
 🔍 Doel: Webservice entrypoint voor live loop (uvicorn)
 🧩 Gebruikt door: render deployment
 📦 Behoort tot: root
