@@ -1,7 +1,7 @@
 """
 📄 Bestand: concepts.py
 🔍 Doel: [AUTO-GEGENEREERD: controleer doel handmatig]
-🧩 Gebruikt door: onbekend
+🧩 Gebruikt door: aion_core/kernel/trade_explainer.py
 📦 Behoort tot: aion_core
 🧠 Laatst geüpdatet: 2025-04-25
 """
