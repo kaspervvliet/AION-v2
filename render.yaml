@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: aion-bot
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main_live.py"
+    envVars:
+      - key: AION_TELEGRAM_BOT
+        sync: false
+      - key: AION_TELEGRAM_CHAT
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+
+  - type: web
+    name: aion-dashboard
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run web_entry.py --server.port 10000 --server.address 0.0.0.0"
+    envVars:
+      - key: AION_TELEGRAM_BOT
+        sync: false
+      - key: AION_TELEGRAM_CHAT
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
