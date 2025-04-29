@@ -1,3 +1,4 @@
+from aion_core.performance.performance_tracker import PerformanceTracker
 
 """
 📄 Bestand: main_live.py
@@ -16,6 +17,8 @@ import time
 
 # Start self-pinger voor Render wake lock
 start_keep_alive()
+
+tracker = PerformanceTracker()
 
 def main():
     while True:
@@ -38,6 +41,8 @@ def main():
 
             if signal:
                 execute_signal(signal)
+                result = {"outcome": "win", "rr_achieved": 2.0}  # TODO: later dynamisch bepalen
+                tracker.log_trade(signal, result)
                 log_event("info", f"Signaal uitgevoerd: {signal}")
             else:
                 log_event("info", "Geen geldig signaal deze cyclus.")
@@ -49,3 +54,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
