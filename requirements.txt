@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+requests
+plotly
+python-dotenv
+streamlit
+# AION AI Feedback & GPT Integratie
+openai>=1.0
+supabase
+python-dateutil
