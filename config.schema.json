@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AION Config Schema",
+  "type": "object",
+  "properties": {
+    "mute_mode": {
+      "type": "boolean",
+      "description": "Globale switch om notificaties/logs tijdelijk uit te zetten"
+    },
+    "default_symbol": {
+      "type": "string",
+      "enum": [
+        "SOL/USDT"
+      ],
+      "description": "Standaard symbool voor analyse"
+    },
+    "intervals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "15m",
+          "1h",
+          "4h",
+          "1d"
+        ]
+      },
+      "description": "Ondersteunde tijdframes"
+    }
+  },
+  "required": [
+    "mute_mode",
+    "default_symbol",
+    "intervals"
+  ]
+}
