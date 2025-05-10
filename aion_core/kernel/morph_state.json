@@ -1,0 +1,10 @@
+{
+  "min_confidence_go": 0.7,
+  "boost_on_win": 0.02,
+  "penalty_on_loss": 0.03,
+  "min": 0.5,
+  "max": 0.95,
+  "bias_weight": 1.0,
+  "rsi_weight": 1.0,
+  "mutation_log": []
+}
